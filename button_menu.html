@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	/* Dropdown Button */
+.dropbtn{
+	background-color: green;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+/*The container <div>-needed to position the dropdown content */
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+/*Dropdown content (hidden by Default)*/
+.dropdown-content{
+	right:0px;
+	/*the dropdown menu logo from right to left, instead of left to righ, add, add right:0; */
+	display: none;
+	position: absolute;
+	background-color:white;
+	min-width: 160px;
+	box-shadow:0px 8px 16px 0px red;
+}
+/* links inside the dropdown */
+.dropdown-content a{
+	color: black;
+	padding: 12px 6px;
+	text-decoration: none;
+	display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown:hover .dropdown-content {display: block;}
+/*change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn{background-color: olive}
+
+	</style>
+</head>
+<body>
+<center>
+	<div class="dropdown">
+		<button class="dropbtn">Dropdown</button>
+		<div class="dropdown-content">
+			<a href="#">link1</a>
+			<a href="#">link2</a>
+			<a href="#">link3</a>
+		</div></center>
+	</div>
+</center>
+</body>
+</html>
